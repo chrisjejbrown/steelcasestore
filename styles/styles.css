@@ -227,6 +227,9 @@ main .section.highlight {
 main .section.announce {
   background-color: rgb(220, 119, 10);
 }
+main .section.black {
+  background-color: rgb(0, 0, 0);
+}
 main .section.full-width > div {
   max-width: 100%;
 }

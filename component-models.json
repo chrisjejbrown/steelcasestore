@@ -160,6 +160,7 @@
         "options": [
         { "name": "None", "value": "none" },
         { "name": "Highlight", "value": "highlight" },
+        { "name": "Black", "value": "black" },
         { "name": "Announce", "value": "announce" }
       ]
       }
