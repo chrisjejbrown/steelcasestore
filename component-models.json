@@ -158,6 +158,7 @@
         "label": "Style",
         "valueType": "string",
         "options": [
+        { "name": "None", "value": "none" },
         { "name": "Highlight", "value": "highlight" },
         { "name": "Announce", "value": "announce" }
       ]
