@@ -1,7 +1,7 @@
 {
   "mappings": [
-    "/content/steelcasestore/:/",
-    "/content/steelcasestore/configuration:/.helix/config.json"
+    "/content/steelcase/:/",
+    "/content/steelcase/configuration:/.helix/config.json"
   ],
-  "includes": ["/content/steelcasestore/"]
+  "includes": ["/content/steelcase/"]
 }
