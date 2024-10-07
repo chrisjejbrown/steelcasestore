@@ -10,6 +10,11 @@
           "plugins": {
             "xwalk": {
               "page": {
+                "validation": {
+                  "valueFormat": "regexp",
+                  "regExp": "^[^$].*",
+                  "customErrorMsg": "Name cannot start with $"
+                },
                 "resourceType": "core/franklin/components/text/v1/text",
                 "template": {}
               }
@@ -180,7 +185,7 @@
               }
             }
           }
-        },   
+        },
         {
           "title": "Blockquote",
           "id": "blockquote",
@@ -240,7 +245,7 @@
               }
             }
           }
-        },   
+        },
         {
           "title": "Experience Fragment",
           "id": "fragment",
