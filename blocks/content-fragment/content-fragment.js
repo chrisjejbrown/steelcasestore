@@ -24,10 +24,10 @@ export default function decorate(block) {
       const adventureTitle = response.data.adventureList.items[0].title;
       document.getElementById(adventureDiv.id).innerHTML += `<section><h3>${adventureTitle}</h3></section>`;
 
-      const adventureDesc = response.data.adventureList.items[0].description.innerHTML;
+      const adventureDesc = response.data.adventureList.items[0].description.HTML;
       document.getElementById(adventureDiv.id).innerHTML += `<section>${adventureDesc}</section>`;
 
-      const adventureItin = response.data.adventureList.items[0].itinerary.innerHTML;
+      const adventureItin = response.data.adventureList.items[0].itinerary.HTML;
       document.getElementById(adventureDiv.id).innerHTML += `<section>${adventureItin}</section>`;
       
 
