@@ -24,20 +24,13 @@ export default function decorate(block) {
       const adventureTitle = response.data.adventureList.items[0].title;
       document.getElementById(adventureDiv.id).innerHTML += `<section><h3>${adventureTitle}</h3></section>`;
 
-      const adventureDesc = response.data.adventureList.items[0].description.plaintext;
+      const adventureDesc = response.data.adventureList.items[0].description.innerHTML;
       document.getElementById(adventureDiv.id).innerHTML += `<section>${adventureDesc}</section>`;
 
-      const { adventureType } = response.data.adventureList.items[0];
-      document.getElementById(adventureDiv.id).innerHTML += '<section>' + `Adventure Type: ${adventureType}</section>`;
+      const adventureItin = response.data.adventureList.items[0].itinerary.innerHTML;
+      document.getElementById(adventureDiv.id).innerHTML += `<section>${adventureItin}</section>`;
+      
 
-      const { tripLength } = response.data.adventureList.items[0];
-      document.getElementById(adventureDiv.id).innerHTML += '<section>' + `Trip Length: ${tripLength}</section>`;
-
-      const tripDifficulty = response.data.adventureList.items[0].difficulty;
-      document.getElementById(adventureDiv.id).innerHTML += '<section>' + `Difficulty: ${tripDifficulty}</section>`;
-
-      const { groupSize } = response.data.adventureList.items[0];
-      document.getElementById(adventureDiv.id).innerHTML += '<section>' + `Group Size: ${groupSize}</section>`;
       /*
 const tripItinerary= response.data.adventureList.items[0].itinerary.html;
 document.getElementById(adventureDiv.id).innerHTML += "<section>" + "Itinerary: </br>" + tripItinerary + "</section>";
