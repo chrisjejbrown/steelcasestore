@@ -14,7 +14,7 @@ export default function decorate(block) {
   const adventureDiv = document.createElement('div');
   adventureDiv.id = 'adventure-${slug}';
   quoteDiv.replaceWith(adventureDiv);
-  const test = AEM_HOST+'/graphql/execute.json/aem-demo-assets/adventure-by-slug;slug='+slug;
+  const test = AEM_HOST+'/graphql/execute.json/aem-demo-assets/adventure-by-slug;slug='+slug.plaintext;
   fetch(test)
     .then((response) => response.json())
     .then((response) => {
